@@ -1,0 +1,22 @@
+.headlines
+{
+	height: 30px;
+	display: block;
+	vertical-align: bottom;
+}
+.headlines .headline
+{
+	height: 16px;
+	line-height: 16px;
+	float: left;
+	border: 1px solid black;
+	margin-top: 4px;
+	padding:4px;
+}
+
+.headlines .headline.active
+{
+	height: 20px;
+	line-height: 20px;
+	margin-top: 0;
+}
