@@ -49,6 +49,10 @@ class Series_Category {
 			touch($file);
 		}
 
+		if ( ! function_exists('yaml_parse_file'))
+		{
+			die('pecl extension yaml missing');
+		}
 		$series = @yaml_parse_file($file);
 
 		if ($series === FALSE OR ! isset($series['series']['default']))

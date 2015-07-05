@@ -37,10 +37,24 @@ class Series_Store {
 			}
 		}
 
-
-		$this->series[] = $series;
+		if ( ! $this->has_series($series))
+		{
+			$this->series[] = $series;
+		}
 	}
 
+	public function has_series(Series $series)
+	{
+		foreach ($this->series as $series_item)
+		{
+			if ($series_item->get_name() == $series->get_name() AND $series_item->get_category()->get_name() == $series->get_category()->get_name())
+			{
+				return TRUE;
+			}
+		}
+
+		return FALSE;
+	}
 	public function get_added()
 	{
 		return $this->added;
