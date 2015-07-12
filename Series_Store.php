@@ -77,7 +77,7 @@ class Series_Store {
 	}
 	public function remove($serie, $track = TRUE)
 	{
-		foreach ($this->series as $key => $serie_item)
+		foreach ($this->series as $series_key => $serie_item)
 		{
 			if ($serie_item->get_name() == $serie)
 			{
@@ -105,7 +105,7 @@ class Series_Store {
 					}
 				}
 
-				unset($this->series[$key]);
+				unset($this->series[$series_key]);
 			}
 		}
 	}

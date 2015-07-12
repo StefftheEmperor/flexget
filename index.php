@@ -8,8 +8,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-define('BASE_DIR','/media/raspi/flexget');
-//define('BASE_DIR','/opt/etc/flexget');
+//define('BASE_DIR','/media/raspi/flexget');
+define('BASE_DIR','/opt/etc/flexget');
 define('SERIES_GERMAN', BASE_DIR.'/series_german.yml');
 define('SERIES_GERMAN_SUBBED', BASE_DIR.'/series_german_subbed.yml');
 define('SERIES_ENGLISH', BASE_DIR.'/series_english.yml');
